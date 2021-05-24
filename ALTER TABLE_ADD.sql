@@ -1,0 +1,12 @@
+USE sucos;
+
+ALTER TABLE tbcliente ADD PRIMARY KEY (CPF);
+
+ALTER TABLE tbcliente ADD COLUMN (DATA_NASCIMENTO DATE);
+
+INSERT INTO tbcliente VALUES('00388934505', 'João da Silva', 'Rua Projetada A número 10','',
+'VILA ROMANA', 'CARATINGA', 'AMAZONAS', '2222222',30,'M',10000.00, 2000, 0, '1989-10-05');
+
+
+SELECT * FROM tbcliente
+
